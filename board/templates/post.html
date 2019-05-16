@@ -1,0 +1,17 @@
+<div class = 'container'>
+    <form method='POST'>
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <br>
+        <input class = "btn btn-dark" type="submit" value="글쓰기">
+    </form>
+
+</div>
+
+<div class = "img">
+
+<form method='post' action='' enctype="multipart/form-data">
+</form>
+

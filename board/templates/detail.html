@@ -1,0 +1,21 @@
+<div class = "container">
+    <a href = "{% url 'show' %}"> 뒤로 </a>
+    
+    <h1> {{board.title}}</h1>
+    <p> {{board.body}}</p>
+    <p> {{board.update_date}}</p>
+
+    <p> {{board.image}} </p>
+
+<br>
+<br>
+    <a href="{% url 'edit' pk=board.pk %}"> 글 수정하기 </a>
+    <br>
+    <br>
+    <a href="{% url 'delete' pk=board.pk %}"> 삭제 </a>
+    
+</div>
+
+<div class = 'uploaded'>
+
+<a id="id_uploaded_file" href="{ uploadFileModel.file.url }"download> {uploadFileModel.file.name} </a>
