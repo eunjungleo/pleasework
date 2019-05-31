@@ -1,1 +1,1 @@
-web: gunicorn pleasework.wsgi --log-file -
+web: gunicorn crudproject.wsgi --log-file -
